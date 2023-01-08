@@ -1,10 +1,11 @@
 server:
   port: 8081
 spring:
-  cloud:     config:
+  cloud: 
+    config:
       server:
         git:
-          default-label: config-server
+          default-label: eureka
           uri: https://github.com/Eri-random/Arquitectura-De-Microservicios
           search-paths: config-data
   application:
